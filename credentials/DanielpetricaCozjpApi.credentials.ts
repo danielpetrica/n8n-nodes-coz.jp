@@ -15,28 +15,36 @@ export class DanielpetricaCozjpApi implements ICredentialType {
 
 	properties: INodeProperties[] = [
 		{
-			displayName: 'API Key',
-			name: 'apiKey',
+			displayName: 'API Token',
+			name: 'apiToken',
 			type: 'string',
 			typeOptions: { password: true },
 			required: true,
 			default: '',
+			description: 'Personal API token from your coz.jp profile (Bearer token)',
+			},
+		{
+			displayName: 'Base URL',
+			name: 'baseUrl',
+			type: 'string',
+			default: 'https://coz.jp/api/',
+			description: 'Override the API base URL for local testing',
 		},
-	];
+		];
 
 	authenticate: IAuthenticateGeneric = {
 		type: 'generic',
 		properties: {
 			headers: {
-				'x-api-key': '={{$credentials.apiKey}}',
+				Authorization: '={{"Bearer " + $credentials.apiToken}}',
 			},
 		},
 	};
 
 	test: ICredentialTestRequest = {
 		request: {
-			baseURL: 'https://coz.jp/api',
-			url: '/v1/user',
+			baseURL: '={{$credentials.baseUrl || "https://coz.jp/apii"}}',
+			url: '/links',
 		},
 	};
 }

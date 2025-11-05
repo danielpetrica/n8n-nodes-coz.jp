@@ -1,6 +1,5 @@
 import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'n8n-workflow';
-import { userDescription } from './resources/user';
-import { companyDescription } from './resources/company';
+import { linkDescription } from './resources/link';
 
 export class DanielpetricaCozjp implements INodeType {
 	description: INodeTypeDescription = {
@@ -21,7 +20,7 @@ export class DanielpetricaCozjp implements INodeType {
 			{ name: 'danielpetricaCozjpApi', required: true }
 		],
 		requestDefaults: {
-			baseURL: 'https://coz.jp/api/',
+			baseURL: '={{$credentials.baseUrl || "https://coz.jp/api"}}',
 			headers: {
 				Accept: 'application/json',
 				'Content-Type': 'application/json',
@@ -35,18 +34,13 @@ export class DanielpetricaCozjp implements INodeType {
 				noDataExpression: true,
 				options: [
 					{
-						name: 'User',
-						value: 'user',
-					},
-					{
-						name: 'Company',
-						value: 'company',
+						name: 'Link',
+						value: 'link',
 					},
 				],
-				default: 'user',
+				default: 'link',
 			},
-			...userDescription,
-			...companyDescription,
+			...linkDescription,
 		],
 	};
 }

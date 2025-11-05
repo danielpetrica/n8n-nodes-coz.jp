@@ -1,0 +1,18 @@
+{
+    "node": "@danielpetrica/n8n-nodes-cozjp",
+    "nodeVersion": "1.0",
+    "codexVersion": "1.0",
+    "categories": ["Development", "Developer Tools"],
+    "resources": {
+        "credentialDocumentation": [
+            {
+                "url": "https://github.com/danielpetrica/n8n-nodes-coz.jp"
+            }
+        ],
+        "primaryDocumentation": [
+            {
+                "url": "https://github.com/danielpetrica/n8n-nodes-coz.jp"
+            }
+        ]
+    }
+}
