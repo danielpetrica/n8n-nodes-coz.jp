@@ -1,4 +1,4 @@
-import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'n8n-workflow';
+import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
 import { linkDescription } from './resources/link';
 
 export class DanielpetricaCozjp implements INodeType {
@@ -14,8 +14,8 @@ export class DanielpetricaCozjp implements INodeType {
 			name: 'Danielpetrica Coz.jp',
 		},
 		usableAsTool: true,
-		inputs: [NodeConnectionTypes.Main],
-		outputs: [NodeConnectionTypes.Main],
+		inputs: ['main'],
+		outputs: ['main'],
 		credentials: [
 			{ name: 'danielpetricaCozjpApi', required: true }
 		],

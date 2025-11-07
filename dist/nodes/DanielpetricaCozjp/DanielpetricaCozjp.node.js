@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DanielpetricaCozjp = void 0;
-const n8n_workflow_1 = require("n8n-workflow");
 const link_1 = require("./resources/link");
 class DanielpetricaCozjp {
     constructor() {
@@ -17,8 +16,8 @@ class DanielpetricaCozjp {
                 name: 'Danielpetrica Coz.jp',
             },
             usableAsTool: true,
-            inputs: [n8n_workflow_1.NodeConnectionTypes.Main],
-            outputs: [n8n_workflow_1.NodeConnectionTypes.Main],
+            inputs: ['main'],
+            outputs: ['main'],
             credentials: [
                 { name: 'danielpetricaCozjpApi', required: true }
             ],

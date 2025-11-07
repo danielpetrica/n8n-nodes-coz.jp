@@ -10,8 +10,11 @@ export class DanielpetricaCozjpApi implements ICredentialType {
 
 	displayName = 'Danielpetrica Coz.jp API';
 
+	// Icon shown in Credentials UI
+	icon = 'file:danielpetricaCozjp.credentials.svg';
+
 	// Link to your community node's README
-	documentationUrl = 'https://github.com/danielpetrica/n8n-nodes-coz.jp';
+	documentationUrl = 'https://github.com/danielpetrica/n8n-nodes-cozjp';
 
 	properties: INodeProperties[] = [
 		{
