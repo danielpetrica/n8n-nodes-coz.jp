@@ -1,6 +1,6 @@
 {
   "name": "@danielpetrica/n8n-nodes-cozjp",
-  "version": "0.1.0",
+  "version": "1.0.0-0",
   "description": "n8n community node for the coz.jp URL shortener (create, get, update, delete, list, expand)",
   "license": "MIT",
   "homepage": "https://github.com/danielpetrica/n8n-nodes-cozjp",
