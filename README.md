@@ -6,6 +6,8 @@ coz.jp is a URL shortener. This node lets you shorten URLs, retrieve, update, de
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/sustainable-use-license/) workflow automation platform.
 
+Note: This community node and its n8n integration are currently in beta. Functionality may change, and you may encounter bugs or incomplete features. Please report any issues or suggestions via the repository Issues page to help us improve.
+
 - [Installation](#installation)
 - [Operations](#operations)
 - [Credentials](#credentials)
@@ -57,6 +59,8 @@ Documentation link: https://github.com/danielpetrica/n8n-nodes-coz.jp
 - Built with `@n8n/node-cli`
 
 This package ships as ES modules compiled to `dist/` and referenced by the `n8n` block in `package.json`.
+
+Beta status: This node and its n8n integration are in active development and considered beta. Expect changes and occasional rough edges. Please report issues and feature requests in the repo.
 
 ## Usage
 

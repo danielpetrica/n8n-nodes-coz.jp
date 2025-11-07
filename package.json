@@ -1,9 +1,9 @@
 {
   "name": "@danielpetrica/n8n-nodes-cozjp",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n community node for the coz.jp URL shortener (create, get, update, delete, list, expand)",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/danielpetrica/n8n-nodes-cozjp",
   "keywords": ["n8n-community-node-package"],
   "author": {
     "name": "Daniel, Andrei-Daniel Petrica",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/danielpetrica/n8n-nodes-cozjp.git"
   },
   "scripts": {
     "build": "n8n-node build",
@@ -34,7 +34,8 @@
     "eslint": "9.32.0",
     "prettier": "3.6.2",
     "release-it": "^19.0.4",
-    "typescript": "5.9.2"
+    "typescript": "5.9.2",
+    "n8n-workflow": "*"
   },
   "peerDependencies": { "n8n-workflow": "*" }
 }

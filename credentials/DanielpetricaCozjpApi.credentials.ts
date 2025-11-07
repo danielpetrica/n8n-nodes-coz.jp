@@ -3,6 +3,7 @@ import type {
 	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
+	Icon,
 } from 'n8n-workflow';
 
 export class DanielpetricaCozjpApi implements ICredentialType {
@@ -11,7 +12,7 @@ export class DanielpetricaCozjpApi implements ICredentialType {
 	displayName = 'Danielpetrica Coz.jp API';
 
 	// Icon shown in Credentials UI
-	icon = 'file:danielpetricaCozjp.credentials.svg';
+	icon = { light: 'file:danielpetricaCozjp.credentials.svg', dark: 'file:danielpetricaCozjp.credentials.dark.svg' } as Icon;
 
 	// Link to your community node's README
 	documentationUrl = 'https://github.com/danielpetrica/n8n-nodes-cozjp';

@@ -13,7 +13,12 @@ exports.linkDescription = [
             { name: 'Create', value: 'create', action: 'Create a short link', description: 'Create a short link' },
             { name: 'Delete', value: 'delete', action: 'Delete a link', description: 'Delete a link' },
             { name: 'Get', value: 'get', action: 'Retrieve a link by ID', description: 'Retrieve a link by ID' },
-            { name: 'List', value: 'list', action: "List user's links", description: "List user's links" },
+            {
+                name: 'List',
+                value: 'list',
+                action: "List user links",
+                description: "List user links"
+            },
             { name: 'Update', value: 'update', action: 'Update a link', description: 'Update a link' },
         ],
         default: 'list',
@@ -179,7 +184,7 @@ exports.linkDescription = [
                     {
                         type: 'set',
                         properties: {
-                            value: { success: true },
+                            value: '={{ { "success": true } }}',
                         },
                     },
                 ],

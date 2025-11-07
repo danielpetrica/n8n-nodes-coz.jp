@@ -5,7 +5,7 @@ class DanielpetricaCozjpApi {
     constructor() {
         this.name = 'danielpetricaCozjpApi';
         this.displayName = 'Danielpetrica Coz.jp API';
-        this.icon = 'file:danielpetricaCozjp.credentials.svg';
+        this.icon = { light: 'file:danielpetricaCozjp.credentials.svg', dark: 'file:danielpetricaCozjp.credentials.dark.svg' };
         this.documentationUrl = 'https://github.com/danielpetrica/n8n-nodes-cozjp';
         this.properties = [
             {
