@@ -4,14 +4,16 @@
     "description": "n8n community node for the coz.jp URL shortener (create, get, update, delete, list, expand)",
     "license": "MIT",
     "homepage": "https://github.com/danielpetrica/n8n-nodes-cozjp",
-    "keywords": ["n8n-community-node-package"],
+    "keywords": [
+        "n8n-community-node-package"
+    ],
     "author": {
         "name": "Daniel, Andrei-Daniel Petrica",
         "email": "andrei@danielpetrica.com"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/danielpetrica/n8n-nodes-cozjp.git"
+        "url": "git+https://github.com/danielpetrica/n8n-nodes-cozjp.git"
     },
     "scripts": {
         "build": "n8n-node build",
@@ -22,12 +24,18 @@
         "release": "n8n-node release",
         "prepublishOnly": "n8n-node prerelease"
     },
-    "files": ["dist"],
+    "files": [
+        "dist"
+    ],
     "n8n": {
         "n8nNodesApiVersion": 1,
         "strict": true,
-        "credentials": ["dist/credentials/DanielpetricaCozjpApi.credentials.js"],
-        "nodes": ["dist/nodes/DanielpetricaCozjp/DanielpetricaCozjp.node.js"]
+        "credentials": [
+            "dist/credentials/DanielpetricaCozjpApi.credentials.js"
+        ],
+        "nodes": [
+            "dist/nodes/DanielpetricaCozjp/DanielpetricaCozjp.node.js"
+        ]
     },
     "devDependencies": {
         "@n8n/node-cli": "*",
@@ -37,5 +45,7 @@
         "typescript": "5.9.2",
         "n8n-workflow": "*"
     },
-    "peerDependencies": { "n8n-workflow": "*" }
+    "peerDependencies": {
+        "n8n-workflow": "*"
+    }
 }
