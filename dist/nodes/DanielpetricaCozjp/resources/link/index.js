@@ -38,7 +38,7 @@ exports.linkDescription = [
             show: showForOp(['get', 'update', 'delete']),
         },
         routing: {
-            req: {
+            request: {
                 url: '=/links/{{$value}}',
             },
         },
@@ -87,7 +87,7 @@ exports.linkDescription = [
                     {
                         type: 'rootProperty',
                         properties: {
-                            property: '={{$parameter.simplify ? "data" : undefined}}',
+                            property: 'data',
                         },
                     },
                 ],
@@ -110,7 +110,7 @@ exports.linkDescription = [
                     {
                         type: 'rootProperty',
                         properties: {
-                            property: '={{$parameter.simplify ? "data" : undefined}}',
+                            property: 'data',
                         },
                     },
                 ],
@@ -133,7 +133,7 @@ exports.linkDescription = [
                     {
                         type: 'rootProperty',
                         properties: {
-                            property: '={{$parameter.simplify ? "data" : undefined}}',
+                            property: 'data',
                         },
                     },
                 ],
@@ -156,7 +156,7 @@ exports.linkDescription = [
                     {
                         type: 'rootProperty',
                         properties: {
-                            property: '={{$parameter.simplify ? "data" : undefined}}',
+                            property: 'data',
                         },
                     },
                 ],

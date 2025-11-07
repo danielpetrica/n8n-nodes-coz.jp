@@ -34,7 +34,7 @@ class DanielpetricaCozjpApi {
         };
         this.test = {
             request: {
-                baseURL: '={{$credentials.baseUrl || "https://coz.jp/apii"}}',
+                baseURL: '={{$credentials.baseUrl || "https://coz.jp/api"}}',
                 url: '/links',
             },
         };

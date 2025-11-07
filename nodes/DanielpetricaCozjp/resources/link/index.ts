@@ -44,7 +44,7 @@ export const linkDescription: INodeProperties[] = [
 			show: showForOp(['get', 'update', 'delete']),
 		},
 		routing: {
-			req: {
+			request: {
 				url: '=/links/{{$value}}',
 			},
 		},
@@ -89,22 +89,22 @@ export const linkDescription: INodeProperties[] = [
 		type: 'hidden',
 		default: '',
 		displayOptions: { show: showForOp(['create']) },
-		routing: {
-			request: {
-				method: 'POST',
-				url: '/links',
-			},
-			output: {
-				postReceive: [
-					{
-						type: 'rootProperty',
-						properties: {
-							property: '={{$parameter.simplify ? "data" : undefined}}',
+			routing: {
+				request: {
+					method: 'POST',
+					url: '/links',
+				},
+				output: {
+					postReceive: [
+						{
+							type: 'rootProperty',
+							properties: {
+								property: 'data',
+							},
 						},
-					},
-				],
+					],
+				},
 			},
-		},
 	},
 	{
 		displayName: 'Get',
@@ -112,22 +112,22 @@ export const linkDescription: INodeProperties[] = [
 		type: 'hidden',
 		default: '',
 		displayOptions: { show: showForOp(['get']) },
-		routing: {
-			request: {
-				method: 'GET',
-				url: '=/links/{{$parameter.linkId}}',
-			},
-			output: {
-				postReceive: [
-					{
-						type: 'rootProperty',
-						properties: {
-							property: '={{$parameter.simplify ? "data" : undefined}}',
+			routing: {
+				request: {
+					method: 'GET',
+					url: '=/links/{{$parameter.linkId}}',
+				},
+				output: {
+					postReceive: [
+						{
+							type: 'rootProperty',
+							properties: {
+								property: 'data',
+							},
 						},
-					},
-				],
+					],
+				},
 			},
-		},
 	},
 	{
 		displayName: 'List',
@@ -135,22 +135,22 @@ export const linkDescription: INodeProperties[] = [
 		type: 'hidden',
 		default: '',
 		displayOptions: { show: showForOp(['list']) },
-		routing: {
-			request: {
-				method: 'GET',
-				url: '/links',
-			},
-			output: {
-				postReceive: [
-					{
-						type: 'rootProperty',
-						properties: {
-							property: '={{$parameter.simplify ? "data" : undefined}}',
+			routing: {
+				request: {
+					method: 'GET',
+					url: '/links',
+				},
+				output: {
+					postReceive: [
+						{
+							type: 'rootProperty',
+							properties: {
+								property: 'data',
+							},
 						},
-					},
-				],
+					],
+				},
 			},
-		},
 	},
 	{
 		displayName: 'Update',
@@ -158,22 +158,22 @@ export const linkDescription: INodeProperties[] = [
 		type: 'hidden',
 		default: '',
 		displayOptions: { show: showForOp(['update']) },
-		routing: {
-			request: {
-				method: 'PATCH',
-				url: '=/links/{{$parameter.linkId}}',
-			},
-			output: {
-				postReceive: [
-					{
-						type: 'rootProperty',
-						properties: {
-							property: '={{$parameter.simplify ? "data" : undefined}}',
+			routing: {
+				request: {
+					method: 'PATCH',
+					url: '=/links/{{$parameter.linkId}}',
+				},
+				output: {
+					postReceive: [
+						{
+							type: 'rootProperty',
+							properties: {
+								property: 'data',
+							},
 						},
-					},
-				],
+					],
+				},
 			},
-		},
 	},
 	{
 		displayName: 'Delete',

@@ -42,8 +42,8 @@ export class DanielpetricaCozjpApi implements ICredentialType {
 	};
 
 	test: ICredentialTestRequest = {
-		request: {
-			baseURL: '={{$credentials.baseUrl || "https://coz.jp/apii"}}',
+ 	request: {
+			baseURL: '={{$credentials.baseUrl || "https://coz.jp/api"}}',
 			url: '/links',
 		},
 	};
